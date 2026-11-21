@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CycleCare</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <div class="container">
+
+        <h1>🌸 CycleCare</h1>
+
+        <p class="subtitle">
+            Smart Menstrual Cycle Predictor
+        </p>
+
+        <div class="input-group">
+
+            <label>
+                📅 Last Period Start Date
+            </label>
+
+            <input type="date" id="lastPeriod">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>
+                🔄 Cycle Length (Days)
+            </label>
+
+            <input
+                type="number"
+                id="cycleLength"
+                value="28"
+                min="20"
+                max="45">
+
+        </div>
+
+        <button id="calculateBtn">
+            Predict My Cycle
+        </button>
+
+        <div id="result"></div>
+
+        <div id="calendarContainer"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
